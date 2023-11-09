@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec des booléens</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
+
   <body>
     <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      <section x-data="{textIsOpen:false}">
+        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn" >bouton 1</button>
+        <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit vel odit hic maxime error quam quos quaerat? Maiores illo, reprehenderit necessitatibus eius, repellat quod sapiente eum porro voluptatum autem mollitia.</p>
+      </section>
+      <section>
+        <button>bouton 2</button>
+        <p>Accusamus illum esse nisi. Sunt error dignissimos necessitatibus asperiores consectetur facilis quas, ipsa facere expedita incidunt, quis animi officia autem voluptates numquam blanditiis vero inventore modi fugiat temporibus consequatur similique?</p>
+      </section>
+      <section>
+        <button>bouton 3</button>
+        <p>Eligendi, fugiat eum. Corrupti dolores expedita debitis ipsa illum sed quos et, at numquam reiciendis cupiditate earum aliquam sapiente quae voluptas dignissimos quia adipisci rem id modi dicta, fugiat enim.</p>
+      </section>
+    </div>
   </body>
+
 </html>
