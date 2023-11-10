@@ -20,9 +20,9 @@
         <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 2</button>
         <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn">Accusamus illum esse nisi. Sunt error dignissimos necessitatibus asperiores consectetur facilis quas, ipsa facere expedita incidunt, quis animi officia autem voluptates numquam blanditiis vero inventore modi fugiat temporibus consequatur similique?</p>
       </section>
-      <section>
-        <button>bouton 3</button>
-        <p>Eligendi, fugiat eum. Corrupti dolores expedita debitis ipsa illum sed quos et, at numquam reiciendis cupiditate earum aliquam sapiente quae voluptas dignissimos quia adipisci rem id modi dicta, fugiat enim.</p>
+      <section x-data="{textIsOpen:false}">
+        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 3</button>
+        <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn">Eligendi, fugiat eum. Corrupti dolores expedita debitis ipsa illum sed quos et, at numquam reiciendis cupiditate earum aliquam sapiente quae voluptas dignissimos quia adipisci rem id modi dicta, fugiat enim.</p>
       </section>
     </div>
   </body>
