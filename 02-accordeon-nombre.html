@@ -11,8 +11,8 @@
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
     <div class="accordeon" x-data="{isOpen : 1}">
       <section>
-        <button aria-controls="button" @click="isOpen = 1">bouton 1</button>
-        <p x-show="isOpen === 1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum quis ut asperiores sint velit aliquid eaque, ullam voluptate ad iure similique et! Repellat nostrum perspiciatis a voluptas molestias quis.</p>
+        <button aria-controls="button" @click="isOpen = 1" class = "txtBtn">bouton 1</button>
+        <p x-show="isOpen === 1" x-transition.scale.90.origin.left.duration.800ms class="txtBtn">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum quis ut asperiores sint velit aliquid eaque, ullam voluptate ad iure similique et! Repellat nostrum perspiciatis a voluptas molestias quis.</p>
       </section>
       <section>
         <button aria-controls="button" @click="isOpen = 2">bouton 2</button>
