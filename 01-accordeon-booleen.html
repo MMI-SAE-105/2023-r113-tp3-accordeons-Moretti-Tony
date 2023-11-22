@@ -13,7 +13,7 @@
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
       <section x-data="{textIsOpen:false}">
-        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn" >bouton 1</button>
+        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 1</button>
         <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit vel odit hic maxime error quam quos quaerat? Maiores illo, reprehenderit necessitatibus eius, repellat quod sapiente eum porro voluptatum autem mollitia.</p>
       </section>
       <section x-data="{textIsOpen:false}">

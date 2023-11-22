@@ -12,8 +12,8 @@
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon">
       <section x-data="{textIsOpen:false}">
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo beatae rerum quaerat voluptatem quae debitis fugiat voluptatum incidunt nostrum, inventore eveniet corporis quis omnis repudiandae a perferendis eaque deserunt!</p>
+        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 1</button>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo beatae rerum quaerat voluptatem quae debitis fugiat voluptatum incidunt nostrum, inventore eveniet corporis quis omnis repudiandae a perferendis eaque deserunt!</p>
       </section>
       <section>
         <button>bouton 2</button>
