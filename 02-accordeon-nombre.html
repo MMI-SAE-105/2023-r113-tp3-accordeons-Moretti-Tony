@@ -9,14 +9,14 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="{IsOpen : 1}">
+    <div class="accordeon" x-data="{isOpen : 1}">
       <section>
-        <button @click="IsOpen = 1">bouton 1</button>
-        <p x-show="IsOpen === 1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum quis ut asperiores sint velit aliquid eaque, ullam voluptate ad iure similique et! Repellat nostrum perspiciatis a voluptas molestias quis.</p>
+        <button aria-controls="button" @click="isOpen = 1">bouton 1</button>
+        <p x-show="isOpen === 1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum quis ut asperiores sint velit aliquid eaque, ullam voluptate ad iure similique et! Repellat nostrum perspiciatis a voluptas molestias quis.</p>
       </section>
       <section>
-        <button>bouton 2</button>
-        <p>Accusantium fugiat fuga ipsa ipsam nostrum odit, excepturi cum mollitia perferendis deserunt possimus iusto. Dicta sapiente consequuntur nesciunt adipisci doloribus incidunt iure placeat laborum suscipit porro. Debitis totam eos perferendis!</p>
+        <button aria-controls="button" @click="isOpen = 2">bouton 2</button>
+        <p x-show="isOpen === 1">>Accusantium fugiat fuga ipsa ipsam nostrum odit, excepturi cum mollitia perferendis deserunt possimus iusto. Dicta sapiente consequuntur nesciunt adipisci doloribus incidunt iure placeat laborum suscipit porro. Debitis totam eos perferendis!</p>
       </section>
       <section>
         <button>bouton 3</button>
