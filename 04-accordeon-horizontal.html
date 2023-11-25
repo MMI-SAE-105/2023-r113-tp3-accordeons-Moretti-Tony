@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,15 +15,15 @@
 }
 
       #accordeon li {
-     /* largeur de chaque élément replié 107px */
-     /* pour cacher le contenu dépassant de l'élément */
-     /* pour l'animation, transition sur width */
-     /* couleur de fond #eee */
-     /* pour enlever les puces */
-     /* pour espacer les éléments, marge de 3px */
-     /* pour espacer le contenu, padding de 5px */
-     /* pour arrondir les bords de 5px */
-}
+        width: 107px;
+        overflow: hidden;
+        transition: width 0.5s;
+        background-color: #eee;
+        list-style: none;
+        margin: 3px;
+        padding: 5px;
+        border-radius: 5px;
+      }
 
 #accordeon li.actif {
      /* largeur de l'élément déplié 317px */
@@ -49,6 +50,7 @@
 }
     </style>
   </head>
+
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon" x-data="{isOpen: 0}">
@@ -81,4 +83,5 @@
       </li>
     </ul>
   </body>
+  
 </html>
