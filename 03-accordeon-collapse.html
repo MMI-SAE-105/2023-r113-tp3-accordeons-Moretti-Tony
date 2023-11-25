@@ -19,9 +19,9 @@
         <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 2</button>
         <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn">Asperiores qui cumque itaque minus cum deserunt, est, odit modi saepe quibusdam error harum ipsum dignissimos. Iusto quos incidunt beatae soluta quas? Modi cumque harum quisquam sint nemo assumenda minima.</p>
       </section>
-      <section>
-        <button>bouton 3</button>
-        <p>Quidem quisquam eos adipisci cum aliquam aut deleniti, quaerat temporibus unde optio laboriosam! Ad tempora sit voluptatibus exercitationem a distinctio atque aliquam fugit voluptatem. Eaque non voluptates rerum velit inventore.</p>
+      <section x-data="{textIsOpen:false}">
+        <button aria-controls="button" @click = "textIsOpen = ! textIsOpen" class = "txtBtn">bouton 3</button>
+        <p id="button" x-show="textIsOpen" x-transition.duration.800ms class="txtBtn">Quidem quisquam eos adipisci cum aliquam aut deleniti, quaerat temporibus unde optio laboriosam! Ad tempora sit voluptatibus exercitationem a distinctio atque aliquam fugit voluptatem. Eaque non voluptates rerum velit inventore.</p>
       </section>
     </div>
   </body>
