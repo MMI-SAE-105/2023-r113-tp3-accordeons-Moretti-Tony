@@ -19,7 +19,7 @@
           </figcaption>
         </figure>
       </li>
-      <li class="actif">
+      <li x-on:click="isOpen = 2" :class="{actif:isOpen === 2}">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
