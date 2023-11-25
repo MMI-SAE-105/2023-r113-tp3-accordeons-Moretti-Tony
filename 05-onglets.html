@@ -9,19 +9,25 @@
   </head>
   <body>
     <h1>Onglets</h1>
-    <div class="accordeon">
-      <section>
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde debitis nihil totam voluptatem nobis cupiditate pariatur eos atque, necessitatibus officia id, sapiente ipsum? Nam soluta dolores molestias deserunt laboriosam.</p>
-      </section>
-      <section>
-        <button>bouton 2</button>
-        <p>Itaque eaque sit quos eligendi minus vero, obcaecati molestias nemo suscipit maiores, veritatis culpa non delectus sint doloribus labore dolores iste aliquam quidem saepe quam. Facilis magnam blanditiis autem temporibus.</p>
-      </section>
-      <section>
-        <button>bouton 3</button>
-        <p>Dolores totam illum alias quos rerum ratione odio? At incidunt, quisquam excepturi reprehenderit quo sint labore quis? Accusamus esse modi officiis nesciunt, deserunt iste! Asperiores et minus mollitia alias adipisci?</p>
-      </section>
+    <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+      <div role="tabpanel">Contenu de l'onglet 1</div>
+    </ul>
+    <div>
+      <div role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi molestias esse voluptatibus quasi neque iure at sit, similique nisi, totam ut. Dolorem omnis magnam asperiores totam. Praesentium ex nihil dignissimos!</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>Excepturi qui ipsa molestiae sit tenetur animi libero perferendis architecto cumque! Placeat dolorum perferendis molestias quam cupiditate optio unde hic officia totam! Cumque, commodi? Id excepturi laborum doloremque delectus deleniti!</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Ex dolores veritatis quisquam expedita, labore, tempora totam, doloribus est pariatur saepe cumque ratione rem magni fugiat natus? Perspiciatis, illo laborum atque quibusdam saepe hic nesciunt fugiat ea id aperiam.</p>
+      </div>
     </div>
   </body>
 </html>
